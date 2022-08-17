@@ -5,13 +5,16 @@ import AddIcon from "@material-ui/icons/Add";
 import DeleteIcon from "@material-ui/icons/Delete";
 
 function App() {
+  // states
   let [task, updateTask] = useState();
   let [arr, updateArr] = useState([]);
   function change(e) {
+    // works when cliked on tasks
     updateTask(e.target.value);
   }
 
   function mkarr() {
+    // adding new task in array
     updateArr((prev) => {
       return [...prev, task];
     });
@@ -45,10 +48,12 @@ function App() {
 }
 
 function List(props) {
+  // states of list of tasks
   let [line, ch] = useState(false);
   let [dis, disp] = useState(true);
 
   let cl = () => {
+    // when clicked on dustbin
     ch(true);
     disp(false);
   };

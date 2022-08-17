@@ -1,3 +1,4 @@
+/* global property */
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +6,8 @@
     font-family: 'Dancing ', cursive;
     /* font-family: 'Lemonada', cursive; */
   }
+
+  /* root div styles */
   .root{
     display: flex;
     justify-content: center;
